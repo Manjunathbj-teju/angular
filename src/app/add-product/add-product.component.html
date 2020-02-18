@@ -1,0 +1,20 @@
+
+<div class="card">
+    <form #addProduct='ngForm' (ngSubmit)='add(addProduct)'>
+        <div>
+            <div>
+                <label for="productName">ProductName</label>
+                <input type="text" class="form-control" id="productName" name="productName" #productName='ngModel' ngModel required>
+            </div>
+            <div>
+                <label for="productImage">ProductImage</label>
+                <input type="text" class="form-control" id="productImage" name="productImage" #productImage='ngModel' ngModel required>
+            </div>
+            <div>
+                <label for="productPrice">ProductPrice</label>
+                <input type="text" class="form-control" id="productPrice"  name="productPrice" #productPrice='ngModel' ngModel required>
+            </div>
+        </div>
+        <button class="submit">Add-Product</button>
+    </form>
+</div>
